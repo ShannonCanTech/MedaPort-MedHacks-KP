@@ -1,0 +1,115 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> MedaPort </title>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+    <linkrel="stylesheet"  href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+     <meta name="viewport" content="width=devide-width, inital-scale=1.0">
+</head>
+<body>
+    <div id="account-container">
+  <div id="sideMenu">
+    <h1>Sales Report</h1>
+
+    <ul class="menu-two">
+      <li>Main</li>
+      <li>Overview</li>
+      <li>History <span class="notification">8</span></li>
+      <li>Buy</li>
+        <li>Send</li>
+    </ul>
+
+    <ul class="menu-two">
+      <li>Account</li>
+      <li>Activity</li>
+      <li>Messages <span class="notification">4</span></li>
+      <li>Downloads</li>
+    </ul>
+
+    <ul class="menu-two">
+      <li>Categories</li>
+      <li>Credit Sales <span class="colorIcon red"></span></li>
+      <li>Channel Sales <span class="colorIcon orange"></span></li>
+      <li>Direct Sales <span class="colorIcon green"></span></li>
+    </ul>
+    <div class="addCategory"><span class="plus">+</span> Add Category</div>
+  </div>
+  <div id="content-two">
+    <div id="theTitleBar">
+      <h2>Dashboard</h2>
+      <div>
+      </div>
+      <span class="controls activeControl">Weekly</span>
+      <span class="controls">Monthly</span>
+    </div>
+
+    <div class="mainChart">
+      <canvas id="accountData"></canvas>
+      <!--<h2>Total Sales</h2>-->
+
+      <div class="clearFix"></div>
+
+      <div id="totalSales">
+        <div class="col">
+          <div id="creditSales" class="progressBar"></div>
+          <h3>$6,059</h3>
+          <span class="progressTitle">Current Balance</span>
+        </div>
+        <div class="col">
+          <div id="channelSales" class="progressBar"></div>
+          <h3>$4,834</h3>
+          <span class="progressTitle">Paid Balance</span>
+        </div>
+        <div class="col">
+          <div id="directSales" class="progressBar"></div>
+          <h3>$5,650</h3>
+          <span class="progressTitle">Saving Objective</span>
+        </div>
+      </div>
+
+      <table>
+        <tr>
+          <th>Payment Tracker</th>
+          <th>Date</th>
+          <th>Amount</th>
+            <th>USD</th>
+            <th> Status</th>
+        </tr>
+
+        <tr>
+          <td>1kK9pthjau89K0PlYh5rt7HfBrJf</td>
+          <td>09/01/16</td>
+          <td>1.0009MMP</td>
+            <td>$</td>
+        <td></td>
+        </tr>
+
+        <tr>
+          <td>90Pkyuacsb67jhafb7jsvjHyT5</td>
+          <td>08/18/16</td>
+          <td>1.5989MP</td>
+        </tr>
+
+        <tr>
+          <td>45Hjsuvdsn8kHy790hlPtdHFnJg</td>
+          <td>08/15/16</td>
+          <td>4.1701MP</td>
+        </tr>
+
+        <tr>
+          <td>8BbKiTaQcJSVAH630gbfYkbhakab7r</td>
+          <td>07/25/16</td>
+          <td>2.974MP</td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+</div>
+</div>
+</body>
+</html>
